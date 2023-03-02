@@ -10,7 +10,7 @@
     </parent>
     <groupId>net.radar</groupId>
     <artifactId>yandex-console</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>yandex-console</name>
     <description>yandex-console</description>
     <properties>
@@ -19,6 +19,12 @@
         <testcontainers.version>1.17.6</testcontainers.version>
     </properties>
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>ru.rbs.rbs-commons</groupId>-->
+<!--            <artifactId>rbs-commons-concurrent</artifactId>-->
+<!--            <version>master-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -73,6 +79,12 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.nurkiewicz.asyncretry</groupId>
+            <artifactId>asyncretry</artifactId>
+            <version>0.0.7</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
