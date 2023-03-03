@@ -34,4 +34,10 @@ public class DbController {
         log.info("Find by name: [{}]", name);
         return profileRepository.findByName(name);
     }
+
+    @RequestMapping(value = "/count")
+    public @ResponseBody Long count() {
+        log.info("Count");
+        return profileRepository.count();
+    }
 }
